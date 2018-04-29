@@ -56,7 +56,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://www.creative-tim.com/product/gaia-bootstrap-template" class="btn btn-danger btn-fill">Free Download</a>
+                        <a href="" class="btn btn-danger btn-fill" data-toggle="modal" data-target="#myModal">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -74,14 +74,14 @@
                 <div class="content">
                     <div class="title-area">
                         <p>Free Demo</p>
-                        <h1 class="title-modern">Gaia</h1>
-                        <h3>Probably the most stylish bootstrap template in the world!</h2>
+                        <h1 class="title-modern">Grossman Designs</h1>
+                        <h3>Take a peek at what your new website could look like.</h2>
                         <div class="separator line-separator">♦</div>
                     </div>
 
                     <div class="button-get-started">
                         <a href="http://www.creative-tim.com/product/gaia-bootstrap-template" target="_blank" class="btn btn-white btn-fill btn-lg ">
-                            Download Demo
+                            Begin Designs!
                         </a>
                     </div>
                 </div>
@@ -90,7 +90,39 @@
         </div>
     </div>
 
+    <!-- Trigger the modal with a button -->
 
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <br>
+            <h4 class="modal-title">Contact Form</h4>
+          </div>
+          <form>
+
+          <div class="modal-body">
+              <input class="form-control" placeholder="name" type="text" id="name">
+              <input class="form-control" placeholder="email" type="email" id="email">
+              <textarea class="form-control" placeholder="message" type="text" id="emailBody"></textarea>
+            <!-- <p>Some text in the modal.</p> -->
+
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-default" onclick="emailSender()">Send</button>
+            <!-- data-dismiss="modal" -->
+          </div>
+        </form>
+
+        </div>
+
+      </div>
+    </div>
     <div class="section">
         <div class="container">
             <div class="row">
@@ -271,7 +303,7 @@
                 </div>
 
                 <div class="button-get-started">
-                    <a href="#gaia" class="btn btn-danger btn-fill btn-lg">Contact Us</a>
+                    <a class="btn btn-danger btn-fill btn-lg">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -393,6 +425,7 @@
 
 <!--  js library for devices recognition -->
 <script type="text/javascript" src="assets/js/modernizr.js"></script>
+<script src="assets/js/home.js"></script>
 
 <!--  script for google maps   -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
